@@ -617,11 +617,26 @@ const styles = StyleSheet.create({
     borderBottomWidth: 2,
     borderBottomColor: '#4CAF50',
   },
+  headerContent: {
+    flex: 1,
+  },
+  headerTitleRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
   title: {
     fontSize: 28,
     fontWeight: 'bold',
     color: '#FFF',
     marginLeft: 12,
+  },
+  authorName: {
+    fontSize: 16,
+    color: '#4CAF50',
+    marginTop: 8,
+    marginLeft: 44,
+    fontWeight: '600',
+    fontStyle: 'italic',
   },
   section: {
     marginBottom: 24,
