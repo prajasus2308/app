@@ -16,7 +16,8 @@ import Svg, { Rect, Circle, Line, Polygon, Text as SvgText } from 'react-native-
 import { Ionicons } from '@expo/vector-icons';
 import { useRobotStore } from '../store/robotStore';
 
-const CANVAS_WIDTH = Dimensions.get('window').width - 32;
+const { width: screenWidth } = Dimensions.get('window');
+const CANVAS_WIDTH = Math.max(screenWidth - 32, 300);
 const CANVAS_HEIGHT = 400;
 const GRID_SIZE = 20;
 const ROBOT_SIZE = 15;
