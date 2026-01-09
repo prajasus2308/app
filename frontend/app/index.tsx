@@ -298,8 +298,13 @@ export default function Index() {
       <ScrollView contentContainerStyle={styles.scrollContent}>
         {/* Header */}
         <View style={styles.header}>
-          <Ionicons name="hardware-chip" size={32} color="#4CAF50" />
-          <Text style={styles.title}>Robotics Simulator</Text>
+          <View style={styles.headerContent}>
+            <View style={styles.headerTitleRow}>
+              <Ionicons name="hardware-chip" size={32} color="#4CAF50" />
+              <Text style={styles.title}>Robotics Simulator</Text>
+            </View>
+            <Text style={styles.authorName}>by Pratyush Raj</Text>
+          </View>
         </View>
 
         {/* Environment Selector */}
